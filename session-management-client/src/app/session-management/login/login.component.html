@@ -1,0 +1,39 @@
+<section id="login">
+    <div class="background-color">
+        <div class="mid-background">
+            <div class="center-background">
+                <div class="login-details">
+                    <div class="header">
+                        <span class="bold-header">Sign in to your account</span>
+                        <span class="sub-header">Welcome back! Please enter your details.</span>
+                    </div>
+                    <div class="login-form" [formGroup]="loginForm">
+                        <div class="fields">
+                            <label class="label required">Email</label>
+                            <input placeholder="Email" type="text" pInputText formControlName="email" />
+                            <div class="error-message" *ngIf="(form['email'].dirty || form['email'].touched) && form['email'].invalid">
+                                <span *ngIf="form['email'].errors?.['required']">Email is required</span>
+                                <span *ngIf="form['email'].errors?.['pattern']">Please enter a valid email </span>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <label class="label required">Password</label>
+                            <p-password placeholder="Password" [toggleMask]="true" [feedback]="false" formControlName="password" />
+                            <div class="error-message" *ngIf="(form['password'].dirty || form['password'].touched) && form['password'].invalid">
+                                <span *ngIf="form['password'].errors?.['required']">Password is required</span>
+                                <span *ngIf="form['password'].errors?.['pattern'] && !form['password'].errors?.['minlength'] && !form['password'].errors?.['maxlength']">
+                                    Use numbers, special characters, and alphabets to create a strong password</span>
+                                <span *ngIf="form['password'].errors?.['minlength']">Password must be minimum 8 characters</span>
+                                <span *ngIf="form['password'].errors?.['maxlength']">Password must be maximum 50 characters</span>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <p-button label="Sign In" (click)="login()"></p-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

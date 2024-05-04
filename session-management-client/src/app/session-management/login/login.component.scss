@@ -1,0 +1,57 @@
+#login {
+    .background-color {
+        background-color: #a0d9ef;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .mid-background {
+            padding: 100px 500px 100px 500px;
+            background-color: #e4eef2;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-radius: 20px;
+            .center-background {
+                padding: 100px;
+                background: linear-gradient(178deg, rgba(201, 234, 252, 0.51) 14.9%, rgba(139, 192, 216, 0.73) 80%);
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                border-radius: 20px;
+                .login-details {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .header {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-bottom: 40px;
+                        .bold-header {
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 25px;
+                            color: #27375D;
+                        }
+                        .sub-header {
+                            text-align: center;
+                            color: #575757;
+                        }
+
+                    }
+                    .fields {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 25px;
+                        .label {
+                            font-size: 15px;
+                            color: #27375D;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .btn {
+                        padding-top: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

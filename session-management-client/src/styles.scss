@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Itim&display=swap');
+
+* {
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+  }
+
+.p-input-icon-left>i, .p-input-icon-left>.p-icon-wrapper, .p-input-icon-right>i, .p-input-icon-right>.p-icon-wrapper {
+    top: 37%;
+}
+
+#login {
+    .p-inputtext {
+        width: 300px;
+        padding: 10px;
+        &.ng-invalid.ng-touched {
+            border-color: red;
+        }
+    }
+    .p-button {
+        background: #00308F;
+        border: 1px solid #00308F;
+        width: 100%;
+    }
+    .fields {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 5px;
+        .error-message {
+            color: red;
+            font-size: 11px;
+            position: absolute;
+            bottom: 0px;
+            top: 68px;
+          }
+    }
+}
