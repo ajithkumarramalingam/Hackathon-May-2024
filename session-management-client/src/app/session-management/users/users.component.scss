@@ -1,0 +1,175 @@
+#users {
+    .top-border {
+        padding: 10px 20px 10px 20px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        .menubar-details {
+            display: flex;
+            justify-content: space-between;
+            .app-details {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .first-letter {
+                    border-radius: 50%;
+                    background: #a0d9ef;
+                    padding: 12px;
+                }
+                .menubar-topic {
+                    color: #27375D;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+            .user-details {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .first-letter {
+                    border-radius: 50%;
+                    background: #a0d9ef;
+                    padding: 12px;
+                    padding: 10px 15px 10px 16px;
+                }
+                .menubar-topic {
+                    color: #27375D;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+        .wrapper {
+            padding: 50px 150px 0px 150px;
+    
+            .background {
+                background-image: url(../../../assets/log-back-img.jpg);
+                border-radius: 5px;
+                padding: 20px 40px;
+                height: 83vh;
+                .header {
+                    color: #27375D;
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+    
+                .main-content {
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 20px;
+    
+                    .card-wrapper {
+                        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                        background: #F5F5F5;
+                        border-radius: 5px;
+                        padding: 20px 45px 20px 45px;
+                        width: 250px;
+    
+                        .cards {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+    
+                            .count {
+                                text-align: center;
+                                color: #27375D;
+                                font-weight: 400;
+                                font-size: 18px;
+                            }
+    
+                            .name {
+                                text-align: center;
+                                color: #27375D;
+                                font-weight: 400;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .pendingCard {
+                        color: #1E6AD2;
+                    }
+                    .approvedCard {
+                        color: #27AE60;
+                    }
+                    .rejectedCard {
+                        color: #EB5757;
+                    }
+                }
+    
+                .table {
+                    padding-top: 20px;
+    
+                    .no-data {
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 10px;
+                    }
+                    .remove {
+                        border: 1px solid gray;
+                        padding: 5px;
+                        border-radius: 8px;
+                    }
+                }
+                .search {
+                    padding-top: 20px;
+                }
+                .btn-details {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .calender-add {
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+                .sessionFrom-form {
+                    .fields {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 25px;
+                        .label {
+                            font-size: 14px;
+                            color: #27375D;
+                            margin-bottom: 5px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .all-btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+                }
+                .details-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .other-details {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 21px;
+                        .detail-group {
+                            display: flex;
+                            justify-content: space-between;
+                            .one-detail {
+                                display: flex;
+                                flex-direction: column;
+                                width: 130px;
+                                gap: 10px;
+                                .label {
+                                    color: #828282;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                }
+                                .value {
+                                    color: #27375D;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

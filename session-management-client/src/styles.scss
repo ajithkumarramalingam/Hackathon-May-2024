@@ -1,44 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Itim&display=swap');
+@import "primeicons/primeicons.css";
 
 * {
     font-family: "Figtree", sans-serif;
     margin: 0;
 }
 
+.p-icon-field-left .p-input-icon:first-of-type {
+    top: 2px;
+}
+
 .required::after {
     content: '*';
     color: red;
     margin-left: 5px;
-  }
+}
 
-.p-input-icon-left>i, .p-input-icon-left>.p-icon-wrapper, .p-input-icon-right>i, .p-input-icon-right>.p-icon-wrapper {
+.p-input-icon-left>i,
+.p-input-icon-left>.p-icon-wrapper,
+.p-input-icon-right>i,
+.p-input-icon-right>.p-icon-wrapper {
     top: 37%;
 }
 
+.p-datepicker table td {
+    padding: 0;
+}
+
+.p-datepicker .p-datepicker-header {
+    padding: 0;
+}
+
+.p-inputtext {
+    &.ng-invalid.ng-touched {
+        border-color: red;
+    }
+}
+
 #login {
+    .p-element.ng-touched.ng-invalid {
+        .p-password-input {
+            border: 1px solid red !important;
+        }
+    }
+
     .p-inputtext {
         width: 300px;
         padding: 10px;
+
         &.ng-invalid.ng-touched {
             border-color: red;
         }
     }
+
     .p-button {
         background: #00308F;
         border: 1px solid #00308F;
         width: 100%;
     }
+
     .fields {
         display: flex;
         flex-direction: column;
         position: relative;
         margin-bottom: 5px;
+
         .error-message {
             color: red;
             font-size: 11px;
             position: absolute;
             bottom: 0px;
             top: 68px;
-          }
+        }
     }
+}
+
+#users {
+    .p-button {
+        background: #00308F;
+        border: 1px solid #00308F;
+        width: 100%;
+    }
+
+    .p-dropdown {
+        width: 100%;
+    }
+
+    p-inputnumber,
+    .p-inputnumber {
+        width: 100%;
+    }
+
+    .p-calendar {
+        width: 100%;
+    }
+
+    .p-sidebar-header {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        justify-content: space-between;
+        color: #27375D;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .p-sidebar .p-sidebar-footer {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .p-sidebar-content {
+        padding-top: 20px;
+    }
+
+    .fields {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 5px;
+
+        .error-message {
+            color: red;
+            font-size: 11px;
+            position: absolute;
+            bottom: 0px;
+            top: 71px;
+        }
+
+        p-dropdown.ng-invalid.ng-touched:not(form)>div {
+            border: 1px solid #D40000 !important;
+        }
+    
+        
+        .ng-invalid.ng-touched {
+            .p-calendar .p-inputtext {
+                border-color: #e24c4c;
+            }
+        }
+    }
+    .p-element.ng-invalid.ng-touched {
+        .p-inputnumber-input {
+            border: 1px solid red !important;
+        }
+    }
+}
+
+.p-button.p-button-sm {
+    padding: 7px;
+}
+
+.p-confirm-popup {
+    padding: 10px;
+}
+
+#admin {
+    p-dropdown.ng-invalid.ng-touched:not(form)>div {
+        border: 1px solid #D40000 !important;
+    }
+
+    .fields {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 5px;
+
+        .error-message {
+            color: red;
+            font-size: 11px;
+            position: absolute;
+            bottom: 0px;
+            top: 71px;
+        }
+    }
+
+    .p-dropdown {
+        width: 100%;
+    }
+
+    .p-calendar {
+        width: 100%;
+    }
+    
+    .all-btn {
+        .p-button {
+            background: #00308F;
+            border: 1px solid #00308F;
+            width: 100%;
+        }
+    }
+}
+.logout {
+    cursor: pointer;
+    font-size: 14px;
+    color: #27375D;
+    font-weight: 600;
 }

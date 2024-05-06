@@ -14,8 +14,16 @@ export class ApiService {
   post(apiEndPoint: string, data: any) {
     return this.http.post<any>(this.url + apiEndPoint, data);
   }
-  
+
   get(apiEndPoint: string) {
     return this.http.get<any>(this.url + apiEndPoint);
+  }
+
+  getById(apiEndPoint: string, id: number | string, queryParams?: any) {
+    return this.http.get<any>(this.url + `${apiEndPoint}/${id}`,{params:queryParams});
+  }
+
+  getSearchData(apiEndPoint: string, data: any,) {
+    return this.http.post<any>(this.url + `${apiEndPoint}`, data);
   }
 }

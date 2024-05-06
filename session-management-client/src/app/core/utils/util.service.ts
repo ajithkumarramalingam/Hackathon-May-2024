@@ -16,7 +16,7 @@ export class UtilService {
         severity: 'success',
         summary: 'Success',
         detail: msg,
-        closable: false
+        closable: false,
       });
   }
 
